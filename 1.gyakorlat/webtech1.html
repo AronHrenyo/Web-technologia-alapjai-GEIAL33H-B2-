@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Hrenyo Áron - ZLEJST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('kepek/processor.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .header-text{
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        section {
+            padding: 40px;
+            margin: 0 20px;
+        }
+        .processor-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .processor-section img {
+            width: 100%;
+            max-width: 400px;
+            margin-right: 20px;
+        }
+        .processor-section h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .processor-section{
+            color: #7f8c8d;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+        .icon {
+            width: 100%;
+            max-width: 54px;
+            margin-right: 10px;
+        }
+        header a {
+            color: hsl(231, 35%, 93%);
+            text-decoration: none;
+        }
+        a {
+            color: hsl(231, 81%, 65%);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1><a href="#processzorok">Processzorok</a></h1>
+            <br>
+            <h3><a href="#amd"><img class="icon" src="kepek/amd.jpg" alt="Intel">AMD processzorok</a> | <a href="#intel"><img class="icon" src="kepek/intel.jpg" alt="Intel">Intel processzorok</a></h3>
+            <br>
+            <h5><a href="#melyik">Melyik processzor felel meg az igényeimnek?</a></h5>
+        </div>
+    </header>
+
+    <section id="processzorok">
+        <div class="container">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <h4>Processzorok</h4>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <p>Annak ellenére, hogy szinte minden minket körülvevő technológiai eszközben megtalálhatóak, könnyű nem teljesen megérteni, hogy mi is az a processzor, különösen, hogy évről évre egyre összetettebbek és bonyolultabbak.Pedig a számítógépes processzor vagy CPU a modern kor egyik legfontosabb találmánya, és a legjobb processzorok növekvő teljesítménye és fejlődése teszi lehetővé a legjobb számítógépektől és a legjobb laptopoktól kezdve a mesterséges intelligencia legújabb vívmányaiig, mint például a ChatGPT. De könnyen lehet, hogy egy egész tudományos karriert lehet eltölteni a számítógépes processzorok minden csínját-bínját tanulmányozva, így a hétköznapi felhasználó számára komoly nehézséget jelenthet, hogy megértse, hogyan lehet egy ilyen kicsi dolog ennyire erős.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <h4>Mi a processzor a számítógépben?</h4>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Alapvetően a számítógépben lévő processzor a működés teljes agya, hogy úgy mondjam. Végrehajtja a programfunkciókat, kiszámítja az adatokat a bemenetből, és segít kezelni és koordinálni számos más rendszerelem, például a memória, a perifériák és a kijelző kimeneteinek tevékenységét.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <h4>Mit csinál egy processzor?</h4>
+                </button>
+            </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>A számítógépes processzor fő feladata a számok feldolgozása és a kimenet előállítása. Ez talán leegyszerűsítően hangzik, de még ha fogalmilag egyszerű is, a gyakorlatban hihetetlen teljesítmény, hogy a szilíciumchipek képesek fejlett logikával működni, és még a már végrehajtott műveletekre vagy a már kiszámított adatokra is emlékezni.Mindezt úgy teszi, hogy az elektronok áramlását a szilíciumba a litográfia egy fejlett formájával bevésett tranzisztorokon keresztül használja. Ezek a tranzisztorok kapuként működnek, amelyek engedélyezik vagy leállítják az elektronok áramlását, és a mérnökök ezeket a kapukat használják fel olyan fejlett logikai struktúrák létrehozására, amelyek képesek két számot összeadni, adatokat tárolni, és nagyjából minden mást elvégezni, amire egy modern számítógép képes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <h4>Milyen típusú processzorok vannak a számítógépek számára</h4>
+                </button>
+            </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Általában kétféle márkájú fogyasztói processzorokat vásárolnak a vásárlók: AMD és Intel. Mindkét márka a chipek széles skáláját gyártja, beleértve az alacsony költségvetésű ajánlatokat a nagy teljesítményű számítási (HPC) processzorokig, mint az Intel Xeon és az AMD Epyc. 
+                    Ebbe nem számít bele az ARM, amely tulajdonképpen egy olyan vállalat, amely licenceli a processzorterveit másoknak, akik aztán az ő specifikációik és módosításaik szerint gyártják azokat.
+                    A processzorok különböző számú processzormaggal is rendelkezhetnek, amelyek a processzornak egymástól függetlenül működő, a sebesség és a teljesítmény növelése érdekében működő részegységei. Általában minél magasabb a magok száma, annál prémiumabb a processzor.
+                    Itt van még a grafikus kártya kérdése, amely saját processzorral (a GPU-val, szemben a számítógép fő CPU-jával) rendelkezik a játékhoz és a videókhoz szükséges fejlett digitális renderelés elvégzéséhez.
+                    Más rendszereknél előfordulhat, hogy speciális feladatokra, például biztonságra elkülönített, dedikált chipek segítik a dolgok könnyebb áramlását, de mindig lesz egy központi feldolgozó egység, amely irányítja a neki alárendelt többi processzor tevékenységét.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <hr>
+            <div class="row" id="amd">
+              <div class="col text-center">
+                <div class="processor-section">
+                    <div>
+                        <h3>AMD</h3>
+                        <img src="kepek/amd.jpg" alt="AMD">
+                        <br>
+                        <br>
+                        <p>Az AMD a nagy teljesítményű és adaptív számítástechnika vezető vállalata, amely olyan termékeket és szolgáltatásokat működtet, amelyek segítenek megoldani a világ legfontosabb kihívásait. Technológiáink az adatközpontok, a beágyazott rendszerek, a játékok és a PC-k piacának jövőjét mozdítják elő.</p>
+                        <p>Az 1969-ben a Szilícium-völgyben induló start-up vállalkozásként alapított AMD útja több tucat alkalmazottal kezdődött, akik szenvedélyesen szerettek volna élvonalbeli félvezető termékeket létrehozni. Az AMD mára a modern számítástechnika mércéjét meghatározó globális vállalattá nőtte ki magát, amely számos fontos iparági elsőséget és jelentős technológiai eredményt ért el az út során.</p>
+                        <a href="https://www.amd.com/en.html" target="_blank">AMD hivatalos weboldala</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="processor-section">
+                    <div>
+                        <h4>AMD CPU vs APU, és a processzorok elnevezési konvenciói</h4>
+                        <p>Az AMD processzorainak elnevezési konvenciója nem túl bonyolult. Az AMD kétféle processzortípust kínál - CPU-kat és APU-kat. Az APU, vagyis az Accelerated Processing Unit csak egy marketing elnevezés, amelyet az AMD az integrált Radeon grafikával rendelkező CPU-kra használ. A Ryzen termékcsalád esetében az elnevezési rendszer a márkanevet és a szintet tartalmazza, amelyet a modellszám és néha egy utótag követ. A modellszám négyjegyű.</p>
+                        <p>Bár a Ryzen CPU-knak eddig csak öt fő architektúrája van, összesen 8 generáció létezik: 1000, 2000, 3000, 4000, 5000, 6000, 7000 és 9000. Ez azért van, mert az AMD néha ugyanazt az architektúrát több generációban is használta. De ne aggódjon, ha csak egy új asztali számítógépet vagy laptopot vásárol, olvasson tovább, hogy megtudja, hogyan dekódolja a vállalat zavaros elnevezési rendszerét.</p>
+                        <p>„A Ryzen processzor modellszámának első két számjegye elárulja a processzor korát és teljesítményszintjét.”
+                        A modellszám első számjegye a processzor sorozatáról árulkodik. A Ryzen 9xxx például elárulja, hogy a legújabb chipek egyikével van dolgunk.
+                        A második számjegy a teljesítményt jelzi; minél magasabb, annál jobb. E két szabály alapján elmondható, hogy a Ryzen 9600 nemcsak újabb, mint a Ryzen 5500, hanem nagyobb teljesítményű is.
+                        Az AMD néha utótagokat is használ a modellszám után, hogy segítsen azonosítani a processzorok egyéb jellemzőit. Íme egy legenda az eddig látott AMD processzor utótagokról.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="processor-section">
+                    <div>
+                        <h4>AMD Ryzen sorozatú processzorok</h4>
+                        <p>Milyen szintűek az AMD Ryzen processzorok?
+                        <br>
+                        Az AMD Ryzen processzorokat különböző szintekbe sorolják, hogy jelezzék teljesítményüket és célközönségüket. A belépőszinttől a csúcskategóriáig a szintek a következők:
+                        <ul>
+                            <li>Ryzen 3: Költségvetésbarát processzorok, amelyek mindennapi számítástechnikára és könnyű játékra alkalmasak.</li>
+                            <li>Ryzen 5: Középkategóriás processzorok, amelyek a játékhoz és a termelékenységhez megfelelő teljesítményt kínálnak.</li>
+                            <li>Ryzen 7: Nagy teljesítményű processzorok, amelyeket igényes játékhoz és tartalomkészítéshez terveztek.</li>
+                            <li>Ryzen 9: Nagy munkaterheléshez és professzionális alkalmazásokhoz csúcsminőségű teljesítményt nyújtó, lelkes processzorok.</li>
+                            <li> Ryzen Threadripper: Extrém teljesítményű processzorok hatalmas számú maggal és szálakkal, amelyek ideálisak a professzionális tartalomkészítők és a power felhasználók számára.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="processor-section">
+                    <div>
+                        <table class="table table-dark table-sm">
+                            <tr>
+                                <th>Utótag</th>
+                                <th class="text-center">Jelentés</th>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>Integrált AMD Radeon grafikus kártyával rendelkezik</td>
+                            </tr>
+                            <tr>
+                                <td>GE</td>
+                                <td>Integrált AMD Radeon grafikus kártyával rendelkezik, de kisebb teljesítményű.</td>
+                            </tr>
+                            <tr>
+                                <td>X</td>
+                                <td>Magasabb órajelű asztali processzor</td>
+                            </tr>
+                            <tr>
+                                <td>XT</td>
+                                <td>Magasabb órajelű asztali processzor, még jobb teljesítménnyel, mint az X</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>Energiahatékony asztali processzor integrált AMD Radeon Vega grafikus processzorral</td>
+                            </tr>
+                            <tr>
+                                <td>H</td>
+                                <td>Nagy teljesítményű mobil processzorok integrált grafikával</td>
+                            </tr>
+                            <tr>
+                                <td>HS</td>
+                                <td>Nagy teljesítményű processzorok integrált grafikával és alacsonyabb fogyasztással</td>
+                            </tr>
+                            <tr>
+                                <td>U</td>
+                                <td>Alacsonyabb órajelű mobil processzorok vékony és könnyű laptopokhoz</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row" id="intel">
+              <div class="col text-center">
+                <div class="processor-section">
+                    <div>
+                        <h3>Intel</h3>
+                        <img src="kepek/intel.jpg" alt="Intel">
+                        <br>
+                        <br>
+                        <p>Az Intel a szilíciumot a Szilícium-völgybe helyezte. Több mint 50 éve az Intel és munkatársai mélyreható hatást gyakorolnak a világra, az üzleti élet és a társadalom fejlődését radikális innovációk létrehozásával mozdítják elő, amelyek forradalmasítják az életmódunkat. </p>
+                        <p>Ma hatókörünket, méretünket és erőforrásainkat arra használjuk, hogy ügyfeleink még teljesebb mértékben kiaknázhassák a digitális technológia erejét. A Moore-törvény által inspirálva folyamatosan azon dolgozunk, hogy a félvezetők tervezését és gyártását fejlesszük, hogy segítsünk megoldani ügyfeleink legnagyobb kihívásait.</p>
+                        <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel hivatalos weboldala</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="processor-section">
+                    <div>
+                        <h4>Intel® processzorok és mikroprocesszorok mindenhez, amit Ön csinál</h4>
+                        <p>Intel® Xeon® processzorok Adatközpontokba és munkaállomásokra tervezve, hogy kezelni tudják a felhő, a nagy adatmennyiség, a modellezés, a mesterséges intelligencia és sok más nagy feldolgozási igényeit.</p>
+                        <p>Intel® Core™ Ultra processzorok Új AI-élményekkel, magával ragadó grafikával, valamint az akkumulátoros üzemidő és a teljesítmény optimális egyensúlyával.</p>
+                        <p>Intel® Core™ processzorok Család Az Intel processzorok laptopokba és asztali számítógépekbe szánt, fejlett reakciókészséget, csatlakoztathatóságot és grafikát biztosító processzorai.</p>
+                        <p>Intel® Gaudi® Al gyorsítók Az Intel® Gaudi® Al gyorsítók és az Intel® Gaudi® szoftverek célja, hogy új szintű termelékenységi előnyöket és választási lehetőséget biztosítsanak az adatközpontok generatív Al-je számára.</p>
+                        <p>Intel® processzor Az Intel belépőszintű CPU-k biztosítják a szükséges teljesítményt a kívánt megfizethetőséggel, hogy bárhol csatlakozhasson, tanulhasson és játszhasson.</p>
+                        <p>Intel Atom® processzor Ezek a kis méretű, nagy teljesítményű CPU-k ideálisak mobil és IoT-eszközökhöz, valamint nagy sűrűségű, alacsony energiaigényű adatközponti alkalmazásokhoz.</p>
+                        <p>Processzorok IoT- és beágyazott alkalmazásokhoz A peremalkalmazások gyors telepítéséhez tekintse meg az Intel peremkész számítási és csatlakozási technológiák portfólióját.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="processor-section">
+                    <h4>Intel Core sorozatú processzorok</h4>
+                    <ul>
+                        <li>Intel® Core™ i9 processzorok Akár 24 processzormagot biztosítanak a zökkenőmentes 4K Ultra HD és 360 fokos videók, a robusztus játékmenet és a többfeladatos teljesítmény érdekében.</li>
+                        <li>Intel® Core™ i7 processzorok Ez a CPU akár 20 mag erejével gyorsított számítási teljesítményt nyújt, amely támogatja a csúcskategóriás játékokat, a csatlakoztathatóságot és a biztonságot.</li>
+                        <li>Intel® Core™ i5 processzorok Tapasztalja meg az otthoni és üzleti PC-k kivételes teljesítményét akár 14 maggal a játékhoz, a kreativitáshoz és a többfeladatos munkavégzéshez.</li>
+                        <li>Intel® Core™ i3 processzorok Ezek az értékálló processzorok kiemelkedő teljesítményt nyújtanak a mindennapi feladatokhoz.</li>
+                        <li>Intel® Core™ processzorok Ez a processzorcsalád az alkalmi játékokhoz, a többfeladatos feladatokhoz és a megbízható csatlakoztathatósághoz nyújt szilárd, valós teljesítményt, amelyre a laptop-felhasználók számíthatnak.</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="processor-section">
+                    <div>
+                        <table class="table table-dark table-sm">
+                            <tr>
+                                <th>Utótag</th>
+                                <th class="text-center">Jelentés</th>
+                            </tr>
+                            <tr>
+                                <td>G1-G7</td>
+                                <td>Grafikai szint (csak az új integrált grafikus technológiával rendelkező processzorok)</td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>Beágyazott</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>Diszkrét grafikát igényel</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>A csomagban diszkrét grafikát tartalmaz</td>
+                            </tr>
+                            <tr>
+                                <td>H</td>
+                                <td>Nagy teljesítményű, mobilra optimalizált</td>
+                            </tr>
+                            <tr>
+                                <td>HK</td>
+                                <td>Nagy teljesítményű, mobilra optimalizált, nem zárolt</td>
+                            </tr>
+                            <tr>
+                                <td>HQ</td>
+                                <td>Mobilra optimalizált, négymagos nagy teljesítmény</td>
+                            </tr>
+                            <tr>
+                                <td>K</td>
+                                <td>Feloldott</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>Különleges kiadás</td>
+                            </tr>
+                            <tr>
+                                <td>T</td>
+                                <td>Teljesítményre optimalizált életstílus</td>
+                            </tr>
+                            <tr>
+                                <td>U</td>
+                                <td>Mobil energiahatékony</td>
+                            </tr>
+                            <tr>
+                                <td>Y</td>
+                                <td>Mobil rendkívül alacsony energiafogyasztás</td>
+                            </tr>
+                            <tr>
+                                <td>P</td>
+                                <td>Vékony és könnyű laptopokhoz optimalizált teljesítmény </td>
+                            </tr>
+                            <tr>
+                                <td>X/XE</td>
+                                <td>Feloldott, csúcskategóriás</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>Gömbrácsos elrendezés (BGA)</td>
+                            </tr>
+                            <tr>
+                                <td>V</td>
+                                <td>Lunar Lake</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <section id="melyik">
+        <div class="container">
+        <h3>Melyik processzor felel meg az igényeimnek?</h3>
+        <p>Általánosságban elmondható, hogy van néhány szabály arra vonatkozóan, hogy melyik processzort érdemes választania, ha frissítést tervez. Az első teendő, hogy megtudja, az alaplapja támogatja-e a kiszemelt új processzort. Az Intel alaplapok és az AMD chipek nem működnek együtt, és fordítva, de vannak olyan alaplapok is, amelyek csak a régebbi processzorokat támogatják, így az új processzor nem lesz kompatibilis velük. </p>
+        <p>Egyes alaplapok kizárólag az újabb chipeket is támogatják, így itt a legfontosabb, hogy meggyőződjön arról, hogy az alaplap és az új processzor egyezik-e, és ha nem, akkor vagy vegyen egy olyan alaplapot, amely támogatja, vagy vásároljon egy új processzort, amelyik a meglévő alaplappal működik.Feltételezve, hogy minden rendben van, ez egy jó, durva bontása az AMD és az Intel teljesítményszintjeinek, hogy tudja, mit kell keresnie az igényei alapján.</p>
+        <ul>
+            <li>AMD Ryzen 3/Intel Core i3 - Ezek a chipek általában a legalacsonyabb költségvetésű ajánlatoknál maradnak.</li>
+            <li>AMD Ryzen 5/Intel Core i5 - Ez sokkal inkább a szokásos „hétköznapi” chipek közé tartozik. Nagy teljesítményre képes és elég olcsó.</li>
+            <li>AMD Ryzen 7/Intel Core i7 - Ezek a chipek ideálisak PC-s játékhoz és könnyű kreatív tartalmi munkához.</li>
+            <li>AMD Ryzen 9/Intel Core i9 - Ez egyszerűen a legjobb a piacon, és a rajongói piacot szolgálja ki, amely a lehető legjobb teljesítményt követeli meg, függetlenül a költségektől.</li>
+        </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hrenyo Áron (ZLEJST)</p>
+    </footer>
+</body>
+</html>
