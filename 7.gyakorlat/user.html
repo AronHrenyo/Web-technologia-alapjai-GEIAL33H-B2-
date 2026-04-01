@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git App - Felhasználói adatlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Felhasználói adatlap</h1>
+
+    <div id="user-container"></div>
+
+    <script src="app.js"></script>
+
+    <script>
+        function getUserIdFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        async function loadUser() {
+            const userId = getUserIdFromUrl();
+
+            if (!userId) {
+                alert('Nincs megadva felhasználó!');
+                return;
+            }
+
+            try {
+                const res = await fetch(`https://api.github.com/users/${userId}`, {
+                    headers: {
+                        'Authorization': 'Bearer ' + GH_ACCESS_TOKEN
+                    }
+                });
+
+                if (!res.ok) {
+                    throw new Error('Hiba: ' + res.status);
+                }
+
+                const user = await res.json();
+
+                const container = document.querySelector('#user-container');
+
+                let html = `<div class="card">`;
+
+                // Avatar
+                if (user.avatar_url) {
+                    html += `<img src="${user.avatar_url}" width="150">`;
+                }
+
+                // Name
+                if (user.name) {
+                    html += `<h2>${user.name}</h2>`;
+                }
+
+                // Blog
+                if (user.blog) {
+                    html += `<p><strong>Blog:</strong> <a href="${user.blog}" target="_blank">${user.blog}</a></p>`;
+                }
+
+                // Location
+                if (user.location) {
+                    html += `<p><strong>Hely:</strong> ${user.location}</p>`;
+                }
+
+                // Bio
+                if (user.bio) {
+                    html += `<p><strong>Bio:</strong> ${user.bio}</p>`;
+                }
+
+                // Public repos
+                if (user.public_repos !== null) {
+                    html += `<p><strong>Publikus repók:</strong> ${user.public_repos}</p>`;
+                }
+
+                // Followers
+                if (user.followers !== null) {
+                    html += `<p><strong>Követők:</strong> ${user.followers}</p>`;
+                }
+
+                html += `</div>`;
+
+                container.innerHTML = html;
+
+            } catch (err) {
+                console.error(err);
+                alert('Hiba történt a felhasználó lekérésekor.');
+            }
+        }
+
+        loadUser();
+    </script>
+
+</body>
+</html>

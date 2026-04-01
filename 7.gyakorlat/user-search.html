@@ -47,8 +47,10 @@
                 for (const user of data.items) {
                     const userHtml = `
                         <div class="card">
-                            <img src="${user.avatar_url}" alt="${user.login}" width="100">
-                            <p>${user.login}</p>
+                            <a href="user.html?id=${user.login}">
+                                <img src="${user.avatar_url}" alt="${user.login}" width="100">
+                                <p>${user.login}</p>
+                            </a>
                         </div>
                     `;
                     resultDiv.innerHTML += userHtml;
